@@ -4,20 +4,19 @@ import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
-
 import { NavbarComponent } from './navbar/navbar.component';
-import { ProdutoComponent } from './produto/produto.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { RelatoriosComponent } from './relatorios/relatorios.component';
+import { ProdutosComponent } from './produtos/produtos.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
     NavbarComponent,
-    ProdutoComponent,
     UsuariosComponent,
-    RelatoriosComponent
+    RelatoriosComponent,
+    ProdutosComponent
   ],
   imports: [
     CommonModule,
