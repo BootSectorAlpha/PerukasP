@@ -9,7 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Componentes
 import { LoginComponent } from './components/login/login.component';
-import { InicioComponent } from './component/dashboard/inicio/inicio.component';
+import { InicioComponent } from './components/dashboard/inicio/inicio.component';
+
 
 
 @NgModule({
