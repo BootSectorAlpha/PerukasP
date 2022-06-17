@@ -10,12 +10,14 @@
   },
 
   {
-    "nome": "Relatorios",
-    "redirect": "/dashboard/relatorios"
+    "nome": "Produtos",
+    "redirect": "/dashboard/produtos"
   },
 
   {
-    "nome": "Produtos",
-    "redirect": "/dashboard/produtos"
+    "nome": "Relatorios",
+    "redirect": "/dashboard/relatorios"
   }
+
+
 ]
