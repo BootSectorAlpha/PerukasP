@@ -3,14 +3,17 @@
     "nome": "Dashboard",
     "redirect": "/dashboard"
   },
+
   {
     "nome": "Usuarios",
     "redirect": "/dashboard/usuarios"
   },
+
   {
     "nome": "Relatorios",
     "redirect": "/dashboard/relatorios"
   },
+
   {
     "nome": "Produtos",
     "redirect": "/dashboard/produtos"

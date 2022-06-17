@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 //Módulos
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 //Angular Material
 import { MatSliderModule } from '@angular/material/slider';
@@ -26,7 +27,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatProgressSpinnerModule,
     ReactiveFormsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   exports: [
     MatSliderModule,
@@ -37,7 +39,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatProgressSpinnerModule,
     ReactiveFormsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ]
 })
 export class SharedModule { }
