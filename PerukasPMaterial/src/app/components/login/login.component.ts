@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
   }
 
   erro(){
-    this._snackBar.open('Usuário ou Senha Inválidos! API Está Retornando', '', {
+    this._snackBar.open('Usuário ou Senha Inválidos! A API Está Retornando', '', {
       duration: 5000,
       horizontalPosition: 'center',
       verticalPosition: 'bottom'
