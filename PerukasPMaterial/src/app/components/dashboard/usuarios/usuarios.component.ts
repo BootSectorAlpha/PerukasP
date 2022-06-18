@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Usuarios } from 'src/app/interfaces/usuarios';
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
+const listarUsuarios: Usuarios[] = [
+  {usuario: 'lutiellcsf', nome: 'Lutiell', sobrenome: 'Clair', sexo: 'Masculino'}
 ];
 
 @Component({
@@ -11,7 +12,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class UsuariosComponent implements OnInit {
   displayedColumns: string[] = ['usuario', 'nome', 'sobrenome', 'sexo'];
-  dataSource = ELEMENT_DATA;
+  dataSource = listarUsuarios;
   constructor() { }
 
   ngOnInit(): void {
