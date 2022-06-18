@@ -5,9 +5,9 @@
 
     <form *ngIf="!loading" [formGroup]="form" (ngSubmit)="entrar()" >
       <img src="./assets/img/usuario.png" alt="Usuário" width="50%">
-      <h1>Login</h1>
+      <h1>Autenticação de Usuário</h1>
       <mat-form-field appearance="fill" class="largura">
-        <mat-label>Usuário</mat-label>
+        <mat-label>Login</mat-label>
         <input type="text" matInput autocomplete="off" formControlName="usuario">
       </mat-form-field>
       <mat-form-field appearance="fill" class="largura">
