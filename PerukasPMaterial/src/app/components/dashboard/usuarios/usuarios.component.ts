@@ -11,7 +11,7 @@ const listarUsuarios: Usuarios[] = [
   styleUrls: ['./usuarios.component.css']
 })
 export class UsuariosComponent implements OnInit {
-  displayedColumns: string[] = ['usuario', 'nome', 'sobrenome', 'sexo'];
+  displayedColumns: string[] = ['usuario', 'nome', 'sobrenome', 'sexo', 'acao'];
   dataSource = listarUsuarios;
   constructor() { }
 
