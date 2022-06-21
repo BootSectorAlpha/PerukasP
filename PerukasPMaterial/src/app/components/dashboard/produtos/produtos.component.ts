@@ -12,7 +12,7 @@ const listarProdutos: Produtos[] = [
   styleUrls: ['./produtos.component.css']
 })
 export class ProdutosComponent implements OnInit {
-  displayedColumns: string[] = ['nome', 'valor', 'imagem'];
+  displayedColumns: string[] = ['nome', 'valor', 'imagem', 'acao'];
   dataSource = listarProdutos;
   constructor() { }
 
