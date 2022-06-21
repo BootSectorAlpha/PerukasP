@@ -12,7 +12,8 @@ import { Usuarios } from 'src/app/interfaces/usuarios';
 export class UsuariosComponent implements OnInit {
 
   listarUsuarios: Usuarios[] = [
-    {usuario: 'lutiellcsf', nome: 'Lutiell', sobrenome: 'Clair', sexo: 'Masculino'}
+    {usuario: 'lutiellcsf', nome: 'Lutiell', sobrenome: 'Clair', sexo: 'Masculino'},
+    {usuario: 'falanatal', nome: 'Fulana', sobrenome: 'de Tal', sexo: 'Feminino'}
   ];
 
   displayedColumns: string[] = ['usuario', 'nome', 'sobrenome', 'sexo', 'acaoUsuario'];
