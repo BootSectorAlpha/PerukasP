@@ -3,6 +3,11 @@
     <span>Produtos</span>
   </mat-toolbar>
 
+  <mat-form-field appearance="standard">
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex.: para o campo 'Nome do Produto', digite 'Nome'" #input autocomplete="off">
+  </mat-form-field>
+
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z10">
 
     <!--- Note that these columns can be defined in any order.
@@ -26,9 +31,34 @@
       <td mat-cell *matCellDef="let element"> {{element.imagem}} </td>
     </ng-container>
 
+    <!-- Weight Column -->
+    <ng-container matColumnDef="acaoProduto">
+      <th mat-header-cell *matHeaderCellDef>  </th>
+      <td mat-cell *matCellDef="let element" style="text-align: right;">
+
+        <a class="pointer" style="color: #1878b0" matTooltip="Ver Produto">
+          <mat-icon>search</mat-icon>
+        </a>
+
+        <a class="pointer" style="color: #1f516f" matTooltip="Editar Produto">
+          <mat-icon>edit</mat-icon>
+        </a>
+
+        <a class="pointer" style="color: #e15639" matTooltip="Excluir Produto">
+          <mat-icon>delete</mat-icon>
+        </a>
+      </td>
+    </ng-container>
+
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                 showFirstLastButtons
+                 aria-label="Select page of periodic elements">
+  </mat-paginator>
+
 </div>
 
 
