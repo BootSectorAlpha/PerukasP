@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
 import { Usuarios } from 'src/app/interfaces/usuarios';
 
-const listarUsuarios: Usuarios[] = [
-  {usuario: 'lutiellcsf', nome: 'Lutiell', sobrenome: 'Clair', sexo: 'Masculino'}
-];
+
 
 @Component({
   selector: 'app-usuarios',
@@ -11,11 +10,21 @@ const listarUsuarios: Usuarios[] = [
   styleUrls: ['./usuarios.component.css']
 })
 export class UsuariosComponent implements OnInit {
+
+  listarUsuarios: Usuarios[] = [
+    {usuario: 'lutiellcsf', nome: 'Lutiell', sobrenome: 'Clair', sexo: 'Masculino'}
+  ];
+
   displayedColumns: string[] = ['usuario', 'nome', 'sobrenome', 'sexo', 'acaoUsuario'];
-  dataSource = listarUsuarios;
+  dataSource = new MatTableDataSource(this.listarUsuarios);
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
 }
